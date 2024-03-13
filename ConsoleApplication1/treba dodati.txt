@@ -1,0 +1,4 @@
+1.racunanje prosjecne ocjene u tabeli Student
+2.dodati Katedra i Adresa tabele i uvezati ih
+3.srediti ispis
+4.dodati da tabela ocjenaNaIspitu ispisuje studente i predmete a ne id

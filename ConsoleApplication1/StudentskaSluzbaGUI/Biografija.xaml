@@ -1,0 +1,33 @@
+﻿<Window x:Class="StudentskaSluzbaGUI.Biografija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentskaSluzbaGUI"
+        mc:Ignorable="d"
+        Title="Biografija" Height="332" Width="450" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="282" Margin="10,10,0,0" VerticalAlignment="Top" Width="402">
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontWeight="Bold" FontStyle="Italic" FontSize="14" Text="Predmet : OISISI"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" FontStyle="Italic" FontSize="14" Text="Projekat:Studentska sluzba"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" FontStyle="Italic" FontSize="14" Text="Radili"/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" FontStyle="Italic" FontSize="14" Text=" "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" FontStyle="Italic" FontSize="14" Text=":Jovan Sarac i Jovan Katanic"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontSize="14" Text="Studentska sluzba je projekat namjenjen da podrzi rad sa podacima koje koristi studentska sluzba. Projekat je radjen u C# i odradjen je graficki prikaz upotrebom WPF-a"/>
+                    <Run FontSize="14" Text="."/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>

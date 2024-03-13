@@ -1,0 +1,27 @@
+﻿<Window x:Class="StudentskaSluzbaGUI.PrikazAdresaKancZaProfesora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentskaSluzbaGUI"
+        mc:Ignorable="d"
+        Title="PrikazAdresaKancZaProfesora"  Height="471.975" Width="582.802" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="Adrese" ItemsSource="{Binding AdresaList, UpdateSourceTrigger=PropertyChanged}"
+                              SelectedItem="{Binding SelectedAdresa, UpdateSourceTrigger=PropertyChanged}" SelectionMode="Single"
+                  IsReadOnly="True" AutoGenerateColumns="False" Margin="25,62,25,110">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id adrese" Width="60" Binding="{Binding Id_adrese}"/>
+                <DataGridTextColumn Header="Ulica" Width="140" Binding="{Binding Ulica}"/>
+                <DataGridTextColumn Header="Broj" Width="60" Binding="{Binding Broj}"/>
+                <DataGridTextColumn Header="Grad" Width="100" Binding="{Binding Grad}"/>
+                <DataGridTextColumn Header="Drzava" Width="150" Binding="{Binding Drzava}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Potvrdi" HorizontalAlignment="Left" Margin="114,356,0,0" VerticalAlignment="Top" Width="121" Height="44" Click="DodajAdresuKanc_Click" />
+        <Button Content="Odustani" HorizontalAlignment="Left" Margin="344,356,0,0" VerticalAlignment="Top" Width="118" Height="44" Click="Odustani_Click" />
+
+
+    </Grid>
+</Window>
